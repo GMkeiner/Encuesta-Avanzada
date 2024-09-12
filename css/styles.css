@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: "Work Sans", sans-serif; */
+    font-family: 'Poppins', sans-serif;
+
+}
+
+body {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    /* background: rgb(190, 234, 189); */
+        background: 
+        linear-gradient(to right, rgb(2, 156, 2), rgba(255, 0, 0, 0)),
+        linear-gradient(to right, rgb(243, 245, 243), rgb(135, 184, 135)),
+        linear-gradient(to right, rgba(0, 100, 0, 1), rgb(167, 228, 167));
+      /* height: 300px; */
+      width: 100%;
+}
+
+.container {
+    background: rgb(236, 239, 236);
+    width: 90%;
+    max-width: 800px;
+    padding: 0;
+
+    border-radius: 8px;
+    min-height: 500px;
+
+}
+
+.inter {
+    background: rgb(9, 149, 9);
+    padding: 45px;
+    color: white;
+    text-align: center;
+
+    border-radius: 8px 8px 0 0;
+}
+
+.content h1 {
+    margin: 0;
+    font-size: 1.5em;
+    line-height: 1.2;
+    width: 100%;
+}
+
+.sub-titulo h3 {
+    padding: 10px;
+    color: #39A900;
+    margin-bottom: 10px;
+}
+
+.form {
+    padding-right: 20px;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.linea{
+    margin: 2%;
+    margin-top: 4%;
+    padding-left: 29%;
+
+}
+
+.button{
+    margin-bottom: 20px;
+    padding-top: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+input[type="radio"]{
+    width: 100px;
+}
+input[type="text"],
+select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#numero{
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+select {
+    background: white;
+}
+
+/* .radio-group {
+    display: flex;
+    gap: 10px;
+}
+
+.radio-group input[type="radio"] {
+    margin-right: 5px;
+} */
+ 
+ a {
+    
+    text-align:center;
+    padding: 10px 20px;
+    margin-left: 0;
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(9, 149, 9);
+    color: white;
+    font-size: 1em;
+    /* cursor: pointer; */
+    transition: background-color 0.3s;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+a:hover {
+    color: white;
+    background-color: rgb(12, 182, 12);
+}
+
+
+@media (max-width: 1024px) {
+
+    .inter {
+        margin-left: 0;
+        padding: 20px;
+    }
+
+    .content h1 {
+        font-size: 1.4em;
+    }
+
+    button {
+        margin-left: 0;
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+
+    }
+
+    .inter {
+        height: auto;
+        padding: 15px;
+    }
+
+    .content h1 {
+        font-size: 1.2em;
+    }
+
+    .radio-group {
+        flex-direction: column;
+    }
+
+    input[type="text"], select, button {
+        font-size: 0.9em;
+    }
+
+    button {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .sub-titulo h3 {
+        font-size: 1.1em;
+    }
+
+    label {
+        font-size: 0.9em;
+    }
+
+    input[type="text"], select, button {
+        font-size: 0.8em;
+    }
+
+    .radio-group {
+        gap: 5px;
+    }
+
+    .radio-group input[type="radio"] {
+        margin-right: 3px;
+    }
+}
+
+.star-label {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #39A900;
+    border-radius: 50%;
+    clip-path: polygon(
+        50% 0%,
+        61% 35%,
+        98% 35%,
+        68% 57%,
+        79% 91%,
+        50% 70%,
+        21% 91%,
+        32% 57%,
+        2% 35%,
+        39% 35%
+    );
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.star-label:hover {
+    background-color: #FFC107;
+    transform: scale(1.1); /* Aumenta el tamaño al pasar el cursor */
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"]:checked + .star-label {
+    background-color: #FF9800; /* Color cuando está seleccionado */
+}
+
+.star-label.selected {
+    background-color: #FF9800; /* Color cuando está seleccionado */
+}
+.hr{
+    color: #39A900;
+}
